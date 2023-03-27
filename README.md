@@ -1,6 +1,9 @@
-# ThreeJS boilerplate
+# Haunted House
+
+## ThreeJS Scene
 
 Technologies used
+
 - Vite
 - Typescript
 
