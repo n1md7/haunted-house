@@ -3,7 +3,7 @@ import GUI from 'lil-gui';
 
 export class MoonLight extends THREE.DirectionalLight {
   constructor(gui: GUI) {
-    super('#ffffff', 0.5);
+    super('#B9D5FF', 0.12);
 
     this.position.set(4, 5, -2);
 

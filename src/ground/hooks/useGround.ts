@@ -6,7 +6,7 @@ export function useGround(gui: GUI, scene: THREE.Scene) {
   const folder = gui.addFolder('Ground');
   const ground = new Ground(folder);
 
-  scene.add(ground);
+  scene.add(ground, ...ground.graves);
 
   return ground;
 }

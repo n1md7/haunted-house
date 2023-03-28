@@ -9,11 +9,10 @@ import { useGround } from '@/src/ground/hooks/useGround';
 import { useHouse } from '@/src/house/hooks/useHouse';
 
 (function setup() {
+  const gui = new GUI();
   const renderer = new Renderer();
   const camera = new Camera();
-  const scene = new Scene();
-
-  const gui = new GUI();
+  const scene = new Scene(gui.addFolder('Scene'));
 
   const lights = useLights(gui, scene);
   const ground = useGround(gui, scene);
